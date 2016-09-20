@@ -1,0 +1,39 @@
+hostname {{ hostname }}
+username {{ username }} password {{ password }} role network-admin
+feature telnet
+feature nxapi
+feature bash-shell
+feature scp-server
+feature interface-vlan
+feature lacp
+feature vpc
+feature lldp
+vpc domain {{ vpc_domain }}
+peer-switch
+role priority {{ vpc_rp }}
+system-priority 8192
+peer-keepalive destination {{ PKA_ip }} source {{ KA_ip }} vrf keep-alive
+peer-gateway
+auto-recovery
+ip arp synchronize
+vrf context keep-alive
+interface Port-channel{{ l3_link }}
+ip address {{ l3_pc_ip }} 255.255.255.252
+no shutdown
+interface Port-channel{{ l3_link }}.{{ KA_vlan }}
+vrf member keep-alive
+encapsulation dot1q {{ KA_vlan }}
+ip address {{ KA_ip }} 255.255.255.252
+no shutdown
+interface Port-channel{{ peer-link }}
+description VPC-PEER-LINK
+switchport
+switchport mode trunk
+switchport trunk native vlan 3967
+switchport trunk allowed vlan {{ VPC_VLANS }}
+spanning-tree port type network
+vpc peer-link
+{% for vlan in vlans %}
+vlan {{ vlan_id }}
+name {{ vlan_name }}
+{% endfor %}

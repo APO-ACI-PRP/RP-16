@@ -1,0 +1,103 @@
+{
+    "ins_api": {
+        "outputs": {
+            "output": [
+                {
+                    "msg": "Success", 
+                    "body": {}, 
+                    "code": "200"
+                }, 
+                {
+                    "msg": "Success", 
+                    "body": {}, 
+                    "code": "200"
+                }, 
+                {
+                    "msg": "Success", 
+                    "body": {}, 
+                    "code": "200"
+                }, 
+                {
+                    "msg": "Success", 
+                    "body": {}, 
+                    "code": "200"
+                }, 
+                {
+                    "msg": "Success", 
+                    "body": {}, 
+                    "code": "200"
+                }, 
+                {
+                    "msg": "Success", 
+                    "body": {}, 
+                    "code": "200"
+                }, 
+                {
+                    "msg": "Success", 
+                    "body": {}, 
+                    "code": "200"
+                }, 
+                {
+                    "body": "Please note that spanning tree port type is changed to  network  port type on vPC peer-link.\nThis will enable spanning tree Bridge Assurance on vPC peer-link provided the STP Bridge Assurance\n(which is enabled by default) is not disabled.\n", 
+                    "msg": "Success", 
+                    "code": "200"
+                }
+            ]
+        }, 
+        "version": "1.0", 
+        "type": "cli_conf", 
+        "sid": "eoc"
+    }
+}
+{
+    "ins_api": {
+        "outputs": {
+            "output": [
+                {
+                    "msg": "Success", 
+                    "body": {}, 
+                    "code": "200"
+                }, 
+                {
+                    "msg": "Success", 
+                    "body": {}, 
+                    "code": "200"
+                }, 
+                {
+                    "msg": "Success", 
+                    "body": {}, 
+                    "code": "200"
+                }
+            ]
+        }, 
+        "version": "1.0", 
+        "type": "cli_conf", 
+        "sid": "eoc"
+    }
+}
+{
+    "ins_api": {
+        "outputs": {
+            "output": [
+                {
+                    "msg": "Success", 
+                    "body": {}, 
+                    "code": "200"
+                }, 
+                {
+                    "msg": "Success", 
+                    "body": {}, 
+                    "code": "200"
+                }, 
+                {
+                    "msg": "Success", 
+                    "body": {}, 
+                    "code": "200"
+                }
+            ]
+        }, 
+        "version": "1.0", 
+        "type": "cli_conf", 
+        "sid": "eoc"
+    }
+}

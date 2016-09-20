@@ -1,0 +1,2 @@
+mgmt_ip,hostname,username,password,vpc_domain,KA_ip,PKA_ip,KA_vlan,vpc_rp,pl_pc,nvpc_pc,l3_pc,l3_pc_ip
+172.31.217.135,NEXUS9K1-CA,admin,cisco123,1,10.0.0.1,10.0.0.2,999,90,4096,4095,4094,172.16.0.1
